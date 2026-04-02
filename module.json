@@ -1,17 +1,28 @@
 {
   "id": "clear-targeting",
   "title": "Clear Targeting",
-  "description": "Visualizes targeting intent on the canvas.",
-  "version": "0.0.1",
-  "authors": [
-    {
-      "name": "Joe"
-    }
-  ],
-  "esmodules": ["scripts/main.js"],
-  "styles": ["styles/styles.css"],
+  "type": "module",
+  "description": "Make player targeting intent more visible during combat.",
+  "version": "0.0.2",
+  "authors": [{ "name": "Joe Filbrun" }],
   "compatibility": {
     "minimum": "13",
     "verified": "13"
-  }
+  },
+  "esmodules": ["scripts/main.js"],
+  "relationships": {
+    "optional": [
+      {
+        "id": "color-picker",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/League-of-Foundry-Developers/fvtt-module-color-picker/master/module.json"
+      }
+    ]
+  },
+
+  "url": "https://github.com/yourname/clear-targeting",
+  "manifest": "https://raw.githubusercontent.com/yourname/clear-targeting/main/module.json",
+  "download": "https://github.com/yourname/clear-targeting/releases/download/v0.0.1/module.zip",
+
+  "keywords": ["targeting", "combat", "pf2e", "overlay"]
 }
