@@ -46,6 +46,7 @@ Adjust how visible the overlay is (0 = invisible, 1 = solid).
 Comma-separated list of player names to ignore when determining who controls a combatant.
 
 Useful for: iPads, TVs running Monk's Common Display, or for GM-only players.
+
 ---
 
 ## How it works

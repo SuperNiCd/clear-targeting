@@ -31,18 +31,6 @@ Hooks.once("init", () => {
     },
   });
 
-  //   game.settings.register("clear-targeting", "lineColor", {
-  //     name: "Overlay Color",
-  //     hint: "Color used for targeting lines and circles.",
-  //     scope: "client",
-  //     config: true,
-  //     type: String,
-  //     default: "#00ff00",
-  //     onChange: () => {
-  //       redrawOverlay();
-  //     },
-  //   });
-  // });
   const hasColorPicker = game.modules.get("color-picker")?.active;
 
   game.settings.register("clear-targeting", "overlayColor", {
@@ -144,9 +132,6 @@ function getControllingUserForCombatant(combatant) {
   // First choice: active non-GM player whose assigned character is this actor
   const excluded = getExcludedPlayers();
 
-  // let user = game.users.find(
-  //   (u) => u.active && !u.isGM && u.character?.id === actor.id,
-  // );
   let user = game.users.find((u) => {
     if (!u.active || u.isGM) return false;
 
@@ -159,9 +144,15 @@ function getControllingUserForCombatant(combatant) {
   if (user) return user;
 
   // Fallback: active non-GM player owner
-  user = game.users.find(
-    (u) => u.active && !u.isGM && actor.testUserPermission(u, "OWNER"),
-  );
+  user = game.users.find((u) => {
+    if (!u.active || u.isGM) return false;
+
+    const name = u.name.toLowerCase();
+    if (excluded.includes(name)) return false;
+
+    return actor.testUserPermission(u, "OWNER");
+  });
+
   if (user) return user;
 
   // Final fallback: active GM owner
@@ -197,13 +188,13 @@ function getExcludedPlayers() {
 function validateExcludedPlayers() {
   const excluded = getExcludedPlayers();
 
-  const userNames = game.users.map(u => u.name.toLowerCase());
+  const userNames = game.users.map((u) => u.name.toLowerCase());
 
-  const missing = excluded.filter(name => !userNames.includes(name));
+  const missing = excluded.filter((name) => !userNames.includes(name));
 
   if (missing.length) {
     ui.notifications.warn(
-      `Clear Targeting: Unknown player(s): ${missing.join(", ")}`
+      `Clear Targeting: Unknown player(s): ${missing.join(", ")}`,
     );
   }
 }
