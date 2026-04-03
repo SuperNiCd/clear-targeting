@@ -22,20 +22,21 @@ Make targeting intent visible during combat. Built for tactical tables.
 
 ### Settings
 <p>
-  <img src="docs/clear-targeting-settings.png" width="700">
+  <img src="docs/clear-targeting-settings.png" width="500">
 </p>
 
 ---
 
 ## Why this exists
 
-In fast-paced encounters—especially with larger groups—targeting intent can get lost:
+In fast-paced encounters—especially with larger groups, targeting intent can get lost with standard pips:
 
 - “Which one are you attacking?”
-- “Wait, that wasn’t your target?”
-- “Roll doesn’t count—you had the wrong target”
+- “Oh, that target is outside my viewport.”
+- “Roll doesn’t count—you didn't have anything targeted.”
+- “Wait - that target was hidden.  Before your attack roll counts, make a flat check.”
 
-This module makes targeting **obvious at a glance**, reducing ambiguity and keeping turns moving.
+This module makes targeting **obvious at a glance**, reducing ambiguity, keeping turns moving, and reducing the need to rewind turns.
 
 ---
 
@@ -80,13 +81,9 @@ If no player is found, it falls back to a GM user.
 
 ---
 
-## Recommended Setup
+## Installation
 
-This module works especially well with:
-
-- **PF2e Toolbelt** – Target Helper feature ensures targets are used correctly for saves and damage
-- **Monk’s Common Display** – share targeting visually with the whole table
-- **PF2e Visioner** – maintain consistent line-of-sight rules
+Install from FoundryVTT module browser.  Enable **Show Targeting Overlay** for any clients you want the overlay to show on, including GM.  The default setting is disabled.
 
 ---
 
