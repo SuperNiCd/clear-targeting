@@ -1,6 +1,6 @@
 # Clear Targeting
 
-Make player intent visible. Built for tactical tables and shared displays.
+Make targeting intent visible during combat. Built for tactical tables and shared displays.
 
 **Clear Targeting** draws simple, readable lines from the active combatant to their targets, helping GMs and players instantly understand who is targeting what during combat.
 

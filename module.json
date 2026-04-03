@@ -2,8 +2,8 @@
   "id": "clear-targeting",
   "title": "Clear Targeting",
   "type": "module",
-  "description": "Make player targeting intent more visible during combat.",
-  "version": "0.0.2",
+  "description": "Make targeting intent visible during combat.",
+  "version": "0.1.0",
   "authors": [{ "name": "Joe Filbrun" }],
   "compatibility": {
     "minimum": "13",
