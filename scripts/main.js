@@ -48,6 +48,7 @@ Hooks.once("init", () => {
     name: "Exclude Players",
     hint: "Comma-separated player names to ignore when determining who controls a combatant. Useful for shared display accounts or GM-only users.",
     scope: "system",
+    restricted: true,
     config: true,
     type: String,
     default: "",

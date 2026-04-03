@@ -1,26 +1,27 @@
 # Clear Targeting
 
-Make targeting intent visible during combat. Built for tactical tables and shared displays.
+Make targeting intent visible during combat. Built for tactical tables.  
 
-**Clear Targeting** draws simple, readable lines from the active combatant to their targets, helping GMs and players instantly understand who is targeting what during combat.
+**Clear Targeting** draws simple, readable lines from the active combatant to their targets, helping GMs and players instantly understand who is targeting what during combat.  This module is game system agnostic, and shines in a game system with combat automation, such as pf2e.
 
 
 ---
 
-## In Action
-
-### Single Target
-<p align="center">
-  <img src="docs/clear-targeting-single-target.png" width="700">
-</p>
+## At A Glance
 
 ### Multi Target
-<p align="center">
-  <img src="docs/clear-targeting-multi-target.png" width="700">
+<p>
+  <img src="docs/clear-targeting-multi-target.png" width="800">
 </p>
 
+### Single Target
+<p>
+  <img src="docs/clear-targeting-single-target.png" width="800">
+</p>
+
+
 ### Settings
-<p align="center">
+<p>
   <img src="docs/clear-targeting-settings.png" width="700">
 </p>
 
@@ -45,8 +46,7 @@ This module makes targeting **obvious at a glance**, reducing ambiguity and keep
 - Uses the **controlling player’s targets** (not just the GM’s)
 - Optional **color and opacity controls**
 - Per-user toggle (players can opt in or out)
-- Support for **shared display setups**
-- Optional **excluded users** (e.g. TV / Common Display accounts)
+- Support for **shared display setups** via optional **excluded users** (e.g. TV / Common Display accounts)
 
 ---
 
