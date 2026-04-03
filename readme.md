@@ -6,6 +6,25 @@ Make player intent visible. Built for tactical tables and shared displays.
 
 ---
 
+## In Action
+
+### Single Target
+<p align="center">
+  <img src="docs/clear-targeting-single-target.png" width="700">
+</p>
+
+### Multi Target
+<p align="center">
+  <img src="docs/clear-targeting-multi-target.png" width="700">
+</p>
+
+### Settings
+<p align="center">
+  <img src="docs/clear-targeting-settings.png" width="700">
+</p>
+
+---
+
 ## Why this exists
 
 In fast-paced encounters—especially with larger groups—targeting intent can get lost:
@@ -64,19 +83,9 @@ If no player is found, it falls back to a GM user.
 
 This module works especially well with:
 
-- **PF2e Toolblet** – Target Helper feature ensures targets are used correctly for saves and damage
+- **PF2e Toolbelt** – Target Helper feature ensures targets are used correctly for saves and damage
 - **Monk’s Common Display** – share targeting visually with the whole table
 - **PF2e Visioner** – maintain consistent line-of-sight rules
-
----
-
-## Screenshots
-
-*(Add your screenshots here)*
-
-- Single target example
-- Multi-target example
-- Shared display view
 
 ---
 
