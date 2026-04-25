@@ -3,8 +3,13 @@
   "title": "Clear Targeting",
   "type": "module",
   "description": "Make targeting intent visible during combat.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "authors": [{ "name": "Joe Filbrun" }],
+  "url": "https://github.com/SuperNiCd/clear-targeting",
+  "license": "LICENSE",
+  "readme": "https://github.com/SuperNiCd/clear-targeting/blob/main/readme.md",
+  "bugs": "https://github.com/SuperNiCd/clear-targeting/issues",
+  "changelog": "https://github.com/SuperNiCd/clear-targeting/blob/main/CHANGELOG.md",
   "compatibility": {
     "minimum": "13",
     "verified": "13"
@@ -20,9 +25,8 @@
     ]
   },
 
-  "url": "https://github.com/yourname/clear-targeting",
-  "manifest": "https://raw.githubusercontent.com/yourname/clear-targeting/main/module.json",
-  "download": "https://github.com/yourname/clear-targeting/releases/download/v0.0.1/module.zip",
+  "manifest": "https://raw.githubusercontent.com/SuperNiCd/clear-targeting/main/module.json",
+  "download": "https://github.com/SuperNiCd/clear-targeting/releases/download/v1.0.0/module.zip",
 
   "keywords": ["targeting", "combat", "pf2e", "overlay"]
 }

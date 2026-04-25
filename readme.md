@@ -1,4 +1,4 @@
-# Clear Targeting
+# Clear Targeting - Tactical Targeting Overlay
 
 Make targeting intent visible during combat. Built for tactical tables.  
 
@@ -11,7 +11,7 @@ Make targeting intent visible during combat. Built for tactical tables.
 
 ### Multi Target
 <p>
-  <img src="docs/clear-targeting-multi-target.png" width="800">
+  <img src="docs/clear-targeting-multi-target.webp" width="800">
 </p>
 
 ### Single Target
@@ -83,7 +83,38 @@ If no player is found, it falls back to a GM user.
 
 ## Installation
 
-Install from FoundryVTT module browser.  Enable **Show Targeting Overlay** for any clients you want the overlay to show on, including GM.  The default setting is disabled.
+Install from the Foundry VTT module browser once the package is listed.
+
+Until then, install by manifest URL:
+
+```text
+https://raw.githubusercontent.com/SuperNiCd/clear-targeting/main/module.json
+```
+
+Enable **Show Targeting Overlay** for any clients you want the overlay to show on, including GM.  The default setting is disabled.
+
+---
+
+## Release
+
+1. Update `version` in `module.json` and add release notes to `CHANGELOG.md`.
+2. Commit the release changes.
+3. Create and push a matching tag, such as `v1.0.0`.
+4. GitHub Actions will publish a release with `module.zip`.
+5. Submit the package to Foundry VTT.
+
+For the Foundry package version entry:
+
+- Version Number: `1.0.0`
+- Package Manifest URL: `https://raw.githubusercontent.com/SuperNiCd/clear-targeting/v1.0.0/module.json`
+- Required Core Version: `13`
+- Compatible Core Version: `13`
+
+The stable install/update manifest remains:
+
+```text
+https://raw.githubusercontent.com/SuperNiCd/clear-targeting/main/module.json
+```
 
 ---
 
