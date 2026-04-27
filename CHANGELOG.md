@@ -2,4 +2,4 @@
 
 ## 1.0.0 - 2026-04-25
 
-- Initial public release.
+- Initial public release for submission to Foundry.
